@@ -14,7 +14,7 @@ class Servicio(models.Model):
     titulo = models.CharField(max_length=120)
 
     # descripcion: texto largo, sin límite fijo de caracteres
-    descripcion = models.TextField()
+    descripcion = models.TextField(blank = True)
 
     # precio: número decimal — hasta 8 dígitos en total, 2 después del punto (ej. 1500.00)
     precio = models.DecimalField(max_digits=8, decimal_places=2)
